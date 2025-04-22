@@ -1,0 +1,232 @@
+@font-face {
+    font-family: "Sora";
+    src: url('../fonts/Sora-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+}
+
+section {
+    padding: 90px 0;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+}
+
+.mainBtn a {
+    background: #FFC505;
+    width: max-content;
+    height: 57px;
+    border-radius: 9px;
+    padding: 0 40px;
+    color: black;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondaryBtn a {
+    background: #2E6496;
+    width: max-content;
+    height: 60px;
+    border-radius: 12px;
+    padding: 0 12px;
+    color: white;
+    font-family: "Sora", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-blue {
+    color: #2E6496;
+}
+
+/* font size */
+
+.f-54 {
+    font-size: 54px;
+    line-height: 64px;
+}
+
+.f-52 {
+    font-size: 52px;
+    line-height: 62px;
+}
+
+.f-48 {
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.f-46 {
+    font-size: 46px;
+    line-height: 56px;
+}
+
+.f-44 {
+    font-size: 44px;
+    line-height: 54px;
+}
+
+.f-40 {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.f-24 {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.f-16 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.f-15 {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* font Family */
+
+.f100 {
+    font-weight: 100;
+}
+
+.f200 {
+    font-weight: 200;
+}
+
+.f300 {
+    font-weight: 300;
+}
+
+.f400 {
+    font-weight: 400;
+}
+
+.f500 {
+    font-weight: 500;
+}
+
+.f600 {
+    font-weight: 600;
+}
+
+.f700 {
+    font-weight: 700;
+}
+
+.f800 {
+    font-weight: 800;
+}
+
+.f900 {
+    font-weight: 900;
+}
+
+/* Header Start */
+
+header {
+    padding: 10px 0;
+}
+
+header .navbar-nav .nav-link {
+    position: relative;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    transition: all 0.4s ease-in-out;
+}
+
+header .navbar-nav .nav-link:hover {
+    color: #2E6496 !important;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+
+
+header .navbar-nav .nav-link.active {
+    color: #2E6496 !important;
+    font-weight: 600;
+}
+
+header .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    background: #2E6496;
+    width: 17px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+
+header .navbar-nav .nav-link:hover::after {
+    width: 100%;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+header .navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    background: #2E6496;
+    width: 17px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 0 auto;
+    opacity: 1 !important;
+}
+
+header .navbar-nav {
+    gap: 45px;
+}
+
+/* Header End */
+
+/* Banner Start */
+
+.banner_sec {
+    background-image: url(../images/banner_img.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 140px 0;
+}
+
+/* Banner End */
