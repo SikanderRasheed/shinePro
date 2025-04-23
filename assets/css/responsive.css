@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1699px) {
+    .banner_sec {
+        padding: 170px 0;
+    }
+
+    .banner_sec .txt p {
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .banner_sec {
+        padding: 140px 0;
+    }
+
+    .banner_sec .txt p {
+        width: 100%;
+    }
+}

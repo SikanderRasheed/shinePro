@@ -68,6 +68,10 @@ a {
     color: #2E6496;
 }
 
+.pera-text {
+    color: #2E649680;
+}
+
 /* font size */
 
 .f-54 {
@@ -103,6 +107,16 @@ a {
 .f-24 {
     font-size: 24px;
     line-height: 34px;
+}
+
+.f-18 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.f-17 {
+    font-size: 17px;
+    line-height: 27px;
 }
 
 .f-16 {
@@ -230,3 +244,11 @@ header .navbar-nav {
 }
 
 /* Banner End */
+
+/* Counter Start */
+
+.counter_sec {
+    padding: 40px 0;
+}
+
+/* Counter End */
