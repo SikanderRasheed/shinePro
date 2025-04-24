@@ -187,6 +187,10 @@ a {
     color: #494949 !important;
 }
 
+.row_gap {
+    gap: 25px 0;
+}
+
 /* font size */
 
 .f-54 {
@@ -447,10 +451,6 @@ header .navbar-nav {
 
 /* Industry Start */
 
-.industry_sec .row_gap {
-    gap: 25px 0;
-}
-
 .industry_sec .card {
     background: #E7EFF6;
     border: 0;
@@ -607,3 +607,55 @@ header .navbar-nav {
 }
 
 /* ServicesSlider End */
+
+/* Tailored Start */
+
+.tailored_sec .card {
+    position: relative;
+    min-height: 210px;
+    overflow: hidden;
+    border-radius: 12px;
+    z-index: 0;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    padding: 0 20px 18px;
+}
+
+.tailored_sec .card::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(46, 100, 150, 0) 47.75%, rgb(128 128 128 / 70%) 95.75%);
+    z-index: -1;
+}
+
+.tailored_sec .card:hover::after {
+    background: linear-gradient(180deg, rgba(46, 100, 150, 0) 47.75%, rgba(46, 100, 150, 0.7) 95.75%);
+}
+
+.tailored_sec .card .img img {
+    filter: grayscale(1);
+}
+
+.tailored_sec .card .img {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.tailored_sec .card .txt {
+    transform: translateY(40px);
+    transition: all 0.4s ease-in-out;
+}
+
+.tailored_sec .card:hover .txt {
+    transform: translateY(0px);
+    transition: all 0.4s ease-in-out;
+}
+
+/* Tailored StarEnd */
