@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1699px) {
+    .banner_sec {
+        padding: 260px 0;
+    }
+
+    .banner_sec .txt p {
+        width: 87%;
+    }
+
+    .f-46 {
+        font-size: 52px;
+        line-height: 61px;
+    }
+
+    .f-16 {
+        font-size: 17px;
+        line-height: 27px;
+    }
+
+    .commercial_sec .card p {
+        line-height: 24px;
+    }
+}
+
+@media only screen and (max-width: 1599px) {
+    .commercial_sec .secondWrapper {
+        margin-top: 183px;
+    }
+
+    .commercial_sec .cardsWrapper {
+        height: 65vh;
+    }
+
+    .f-24 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+@media only screen and (max-width: 1399px) {
+    .banner_sec {
+        padding: 140px 0;
+    }
+
+    .banner_sec .txt p {
+        width: 100%;
+    }
+}
