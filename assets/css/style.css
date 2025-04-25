@@ -157,6 +157,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.mainBtn a:hover {
+    background: #2E6496;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
 }
 
 .secondaryBtn a {
@@ -173,6 +181,14 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.secondaryBtn a:hover {
+    background: #FFC505;
+    font-weight: 600;
+    color: #000;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
 }
 
 .text-blue {
@@ -208,10 +224,16 @@ a {
     line-height: 58px;
 }
 
+.f-47 {
+    font-size: 47px;
+    line-height: 57px;
+}
+
 .f-46 {
     font-size: 46px;
     line-height: 56px;
 }
+
 
 .f-44 {
     font-size: 44px;
@@ -226,6 +248,11 @@ a {
 .f-24 {
     font-size: 24px;
     line-height: 34px;
+}
+
+.f-22 {
+    font-size: 22px;
+    line-height: 32px;
 }
 
 .f-18 {
@@ -539,6 +566,10 @@ header .navbar-nav {
     background: #2E6496;
 }
 
+.why_choose_sec .txt p {
+    padding-bottom: 60px;
+}
+
 .why_choose_sec .card {
     padding: 45px 20px;
     background: white;
@@ -548,6 +579,10 @@ header .navbar-nav {
     height: 100%;
     transition: all 0.4s ease-in-out;
     z-index: 0;
+}
+
+.why_choose_sec .lastCard {
+    background: #cce6ff;
 }
 
 .why_choose_sec .card:hover {
@@ -565,31 +600,26 @@ header .navbar-nav {
 }
 
 .why_choose_sec .card:hover .static_content {
-    opacity: 0;
-    transition: all 0.4s ease-in-out;
-}
-
-.why_choose_sec .card:hover .hover_content {
     opacity: 1;
-    top: -73px;
     transition: all 0.4s ease-in-out;
 }
 
 .why_choose_sec .card .hover_content {
     position: absolute;
-    top: -50px;
+    top: -107px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    opacity: 0;
+    opacity: 1;
     height: 100%;
     transition: all 0.4s ease-in-out;
     z-index: -1;
 }
 
+/* 
 .why_choose_sec .choose_slider .slick-list {
     padding: 60px 0 0;
-}
+} */
 
 /* Why Choose End */
 
@@ -597,7 +627,7 @@ header .navbar-nav {
 
 .services_slider_sec {
     background: #E7EFF6;
-    padding: 12px 0;
+    padding: 7px 0;
 }
 
 .services_slider_sec .service_slider .slide_item {
@@ -639,6 +669,12 @@ header .navbar-nav {
 
 .tailored_sec .card .img img {
     filter: grayscale(1);
+    transition: all 0.4s ease-in-out;
+}
+
+.tailored_sec .card:hover .img img {
+    filter: grayscale(0);
+    transition: all 0.4s ease-in-out;
 }
 
 .tailored_sec .card .img {
@@ -659,3 +695,30 @@ header .navbar-nav {
 }
 
 /* Tailored StarEnd */
+
+/* Contact Form Start */
+
+.contact_form_sec {
+    background-image: url(../images/contact_form.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact_form_sec .numbers {
+    position: relative;
+}
+
+.contact_form_sec .numbers::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 1px;
+    height: 90%;
+    background: white;
+}
+
+/* Contact Form End */
