@@ -426,6 +426,11 @@ header .navbar-nav {
 
 /* Commercial Start */
 
+.commercial_sec:hover .cardsWrapper {
+    transform: scale(1.03);
+    transition: all 0.4s ease-in-out;
+}
+
 .commercial_sec .txt p {
     width: 70%;
     margin: 0 auto;
@@ -479,6 +484,7 @@ header .navbar-nav {
     flex-direction: column;
     justify-content: space-between;
     height: 56vh;
+    transition: all 0.4s ease-in-out;
 }
 
 .commercial_sec .secondWrapper {
