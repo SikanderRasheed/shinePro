@@ -1,10 +1,24 @@
 @media only screen and (max-width: 1699px) {
+    section {
+        padding: 130px 0 90px;
+    }
+
     .banner_sec {
-        padding: 260px 0;
+        height: 120vh;
     }
 
     .banner_sec .txt p {
         width: 87%;
+    }
+
+    .secondaryBtn a {
+        padding: 0 45px;
+    }
+
+    .secondaryBtn a,
+    .mainBtn a {
+        height: 70px;
+        font-size: 20px;
     }
 
     .f-46 {
@@ -12,13 +26,54 @@
         line-height: 61px;
     }
 
+    .f-24 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
     .f-16 {
         font-size: 17px;
         line-height: 27px;
     }
 
+    .commercial_sec .txt p {
+        margin-bottom: 40px !important;
+    }
+
     .commercial_sec .card p {
         line-height: 24px;
+    }
+
+    .commercial_sec .cardsWrapper {
+        height: 69vh;
+    }
+
+    .industry_sec {
+        padding: 30px 0 120px;
+    }
+
+    .industry_sec .card p {
+        height: 50px;
+    }
+
+    .why_choose_sec .txt p {
+        padding-bottom: 90px;
+    }
+
+    .why_choose_sec .mainBtn {
+        margin-top: 70px !important;
+    }
+
+    .why_choose_sec .mainBtn a {
+        padding: 0 60px;
+    }
+
+    .tailored_sec {
+        padding: 130px 0 120px;
+    }
+
+    .tailored_sec .secondaryBtn {
+        margin-top: 20px !important;
     }
 }
 
@@ -28,16 +83,32 @@
     }
 
     .commercial_sec .cardsWrapper {
-        height: 65vh;
+        height: 71.4vh;
     }
 
     .f-24 {
         font-size: 22px;
         line-height: 32px;
     }
+
+    .secondaryBtn a,
+    .mainBtn a {
+        height: 65px;
+        font-size: 16px;
+    }
 }
 
 @media only screen and (max-width: 1399px) {
+    .f-46 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+
+    .f-24 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
     .banner_sec {
         padding: 140px 0;
     }
@@ -45,4 +116,352 @@
     .banner_sec .txt p {
         width: 100%;
     }
+
+    .commercial_sec .txt p {
+        width: 85%;
+    }
+
+    .commercial_sec .cardsWrapper {
+        height: 66vh;
+    }
+
+    .commercial_sec .card h4 {
+        line-height: 28px;
+    }
+
+    .commercial_sec .card p {
+        line-height: 22px;
+        font-size: 14px;
+    }
+
+    .industry_sec .card p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .why_choose_sec .card .hover_content {
+        top: -46px;
+    }
+
+    .tailored_sec .card .txt {
+        transform: translateY(38px);
+    }
 }
+
+@media only screen and (max-width: 1299px) {
+    .f-40 {
+        font-size: 36px;
+        line-height: 45px;
+    }
+
+    .f-16 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .commercial_sec .cardsWrapper {
+        height: 63vh;
+    }
+
+    .commercial_sec .secondWrapper {
+        margin-top: 160px;
+    }
+
+    .why_choose_sec .card .icon {
+        margin-bottom: 40px;
+    }
+
+    .why_choose_sec .card .hover_content {
+        top: -56px;
+    }
+
+    .why_choose_sec .txt p {
+        padding-bottom: 60px;
+    }
+
+    .services_slider_sec p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .f-54 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .f-47 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .f-46 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .f-44 {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .f-40 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .f-24 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .f-17 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .f-16 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .commercial_sec .secondWrapper {
+        margin-top: 118px;
+    }
+
+    .commercial_sec .card h4 {
+        line-height: 25px;
+        font-size: 17px;
+        width: 100%;
+    }
+
+    .why_choose_sec .card {
+        padding: 35px 16px;
+    }
+
+    .why_choose_sec .card .static_content h3 {
+        line-height: 25px;
+    }
+
+    .why_choose_sec .card .icon {
+        margin-bottom: 30px;
+    }
+
+    .why_choose_sec .card .hover_content {
+        top: 8px;
+    }
+
+    .services_slider_sec p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .tailored_sec .card {
+        min-height: 167px;
+        padding: 0 15px 18px;
+    }
+
+    .tailored_sec .card .img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .tailored_sec .card .img img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .tailored_sec .card .txt {
+        transform: translateY(35px);
+    }
+
+    .contact_form_sec .form {
+        padding: 45px 35px 38px;
+    }
+}
+
+@media only screen and (max-width: 1099px) {
+
+    .f-20 {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .banner_sec {
+        padding: 140px 0;
+        height: 100%;
+    }
+
+    .footer_sec {
+        padding: 20px 0;
+    }
+
+    .footer_sec form input {
+        font-size: 14px;
+    }
+
+    .footer_sec form button {
+        height: 40px;
+        padding: 0px 19px;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    section {
+        padding: 80px 0;
+    }
+
+    .banner_sec {
+        padding: 90px 0;
+    }
+
+    .txt {
+        text-align: center;
+    }
+
+    .mainBtn a {
+        margin: 0 auto;
+    }
+
+    .commercial_sec .txt p {
+        margin-bottom: 20px !important;
+    }
+
+    .commercial_sec .cardsWrapper {
+        height: 100%;
+    }
+
+    .commercial_sec .secondWrapper {
+        margin-top: 0px;
+    }
+
+    .commercial_sec .card {
+        min-height: 175px;
+    }
+
+    .why_choose_sec {
+        padding: 90px 0 90px;
+    }
+
+    .why_choose_sec .card .hover_content {
+        position: absolute;
+        top: 0px;
+    }
+
+    .why_choose_sec .txt p {
+        padding-bottom: 0px;
+    }
+
+    .why_choose_sec .card .icon img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .why_choose_sec .card .hover_content img {
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .why_choose_sec .mainBtn {
+        margin-top: 40px !important;
+    }
+
+    .tailored_sec {
+        padding: 90px 0;
+    }
+
+    .contact_form_sec {
+        padding: 90px 0;
+    }
+
+    .contact_form_sec .txt {
+        text-align: left;
+    }
+
+    .contact_form_sec .txt h2 {
+        line-height: 55px;
+        margin-bottom: 30px;
+    }
+
+    .footer_sec .menu_links ul {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    section,
+    .banner_sec,
+    .why_choose_sec {
+        padding: 50px 0;
+    }
+
+    .industry_sec {
+        padding: 0px 0 50px;
+    }
+
+    .f-54 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .f-46 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .f-40 {
+        font-size: 25px;
+        line-height: 34px;
+    }
+
+    .f-17 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .f-16 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .secondaryBtn a,
+    .mainBtn a {
+        height: 55px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    .counter_sec .counter {
+        text-align: center;
+    }
+
+    .counter_sec .counter .text-blue {
+        justify-content: center;
+    }
+
+    .commercial_sec .txt p {
+        width: 100%;
+    }
+
+    .industry_sec .content {
+        text-align: center;
+    }
+
+    .industry_sec .card p {
+        height: 100%;
+    }
+
+    .why_choose_sec .lastCard {
+        background: #cce6ff;
+        min-height: 250px;
+    }
+
+    .why_choose_sec .mainBtn {
+        margin-top: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {}

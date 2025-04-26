@@ -73,7 +73,27 @@ $('.service_slider').slick({
     arrows: false,
     dots: false,
     pauseOnHover: false,
-    pauseOnFocus: false
+    pauseOnFocus: false,
+    responsive: [
+        {
+            breakpoint: 1099,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+    ]
 });
 
 //   ServicesSlider End
