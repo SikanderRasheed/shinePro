@@ -327,6 +327,7 @@ a {
 
 header {
     padding: 6px 0;
+    position: relative;
 }
 
 header .navbar-brand {
