@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./assets/css/slick.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -623,10 +626,26 @@
                                 </div>
                                 <div class="service formFlex">
                                     <label for="service" class="inter f-20 f400">Choose your Service</label>
-                                    <input type="text" name="service" placeholder="Restroom & Hygiene"
-                                        class="inter f-16 f400">
+                                    <!-- <input type="text" name="service" placeholder="Restroom & Hygiene"
+                                        class="inter f-16 f400"> -->
+                                    <div class="custom-select">
+                                        <button class="custom-select__toggle" id="customSelectToggle" type="button"
+                                            value="" data-index="0">--Select--</button>
+                                        <ul class="custom-select__dropdown" id="customSelectDropdown">
+                                            <li class="custom-select__option" data-value="" data-index="0">--Select--
+                                            </li>
+                                            <li class="custom-select__option" data-value="option 1" data-index="1">
+                                                Option 1</li>
+                                            <li class="custom-select__option" data-value="option 2" data-index="2">
+                                                Option 2</li>
+                                            <li class="custom-select__option" data-value="option 3" data-index="3">
+                                                Option 3</li>
+                                            <li class="custom-select__option" data-value="option 4" data-index="4">
+                                                Option 4</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <button class="f-16 f500">Send Message</button>
+                                <button class="f-16 f500 submit_btn">Send Message</button>
                             </form>
                         </div>
                     </div>
@@ -698,7 +717,6 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
-
 </body>
 
 </html>

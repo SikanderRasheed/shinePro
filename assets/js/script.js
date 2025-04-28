@@ -103,3 +103,31 @@ $('.service_slider').slick({
 });
 
 //   ServicesSlider End
+
+
+// Input Custom Dropdown 
+const customSelectToggle = document.getElementById('customSelectToggle');
+const customSelectDropdown = document.getElementById('customSelectDropdown');
+const customSelectOptions = document.querySelectorAll('.custom-select__option');
+
+// Toggle dropdown visibility
+customSelectToggle.addEventListener("click", function () {
+    customSelectDropdown.classList.toggle("active");
+});
+
+// Handle option selection
+customSelectOptions.forEach((option) => {
+    option.addEventListener("click", function () {
+        customSelectToggle.innerText = option.innerText;
+        customSelectToggle.dataset.value = option.dataset.value;
+        customSelectToggle.dataset.index = option.dataset.index;
+        customSelectDropdown.classList.remove("active");
+    });
+});
+
+// Optional: Close dropdown if clicked outside
+document.addEventListener("click", function (e) {
+    if (!customSelectToggle.contains(e.target) && !customSelectDropdown.contains(e.target)) {
+        customSelectDropdown.classList.remove("active");
+    }
+});

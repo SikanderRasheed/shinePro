@@ -827,7 +827,8 @@ header .navbar-nav {
     flex: 0 0 200px;
 }
 
-.contact_form_sec .form input {
+.contact_form_sec .form input,
+.contact_form_sec .form button {
     flex: 1;
     background: #FFFFFFB2;
     border: 1px solid #FFFFFF;
@@ -842,7 +843,7 @@ header .navbar-nav {
     box-shadow: 0px 0px 26px 8px rgba(0, 0, 0, 0.060) inset;
 }
 
-.contact_form_sec .form button {
+.contact_form_sec .form .submit_btn {
     width: 100%;
     height: 65px;
     background: #2E6496;
@@ -853,10 +854,75 @@ header .navbar-nav {
     transition: all 0.4s ease-in-out;
 }
 
-.contact_form_sec .form button:hover {
+.contact_form_sec .form .submit_btn:hover {
     color: black;
     background: #FFC505;
     transition: all 0.4s ease-in-out;
+}
+
+.contact_form_sec .custom-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 55px;
+}
+
+.contact_form_sec .custom-select__toggle {
+    width: 100%;
+    color: #7f7f7f;
+    font-size: 16px;
+    position: relative;
+}
+
+.contact_form_sec .custom-select__toggle::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 6px);
+    border-bottom: 1px solid #7f7f7f;
+    border-right: 1px solid #7f7f7f;
+    transform: rotate(45deg);
+    background-color: transparent;
+}
+
+.contact_form_sec .custom-select__toggle:active::after {
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.6);
+}
+
+.contact_form_sec .custom-select__dropdown {
+    display: none;
+    width: 100%;
+    background-color: #fffcf2;
+    border-radius: 20px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.6),
+        4px 4px 10px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    overflow: hidden;
+    z-index: 10;
+    padding: 0;
+}
+
+.contact_form_sec .custom-select__dropdown.active {
+    display: block;
+}
+
+.contact_form_sec .custom-select__option {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact_form_sec .custom-select__option:nth-child(odd) {
+    background-color: #f6f3e6;
+}
+
+.contact_form_sec .custom-select__option:hover {
+    background-color: #e6e1c6;
 }
 
 /* Contact Form End */
