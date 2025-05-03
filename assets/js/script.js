@@ -1,16 +1,15 @@
-// Dynamic header Start
 fetch('/header.html')
     .then(res => res.text())
     .then(data => {
         document.getElementById("header").innerHTML = data;
 
-        // Wait until DOM is updated
         const currentPath = window.location.pathname
             .replace(/\/$/, "")            // remove trailing slash
             .replace(/\.html$/, "")        // remove .html
             .toLowerCase();                // lowercase for consistency
 
         const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+        let matched = false;
 
         navLinks.forEach(link => {
             const href = link.getAttribute("href") || "";
@@ -19,18 +18,24 @@ fetch('/header.html')
                 .replace(/\.html$/, "")     // remove .html
                 .toLowerCase();             // lowercase
 
-            // Home condition
-            const isHome =
-                (linkPath === "/index" && (currentPath === "" || currentPath === "/" || currentPath === "/index"));
-
-            if (currentPath === linkPath || isHome) {
+            if (currentPath === linkPath) {
                 link.classList.add("active");
                 link.setAttribute("aria-current", "page");
+                matched = true;
             } else {
                 link.classList.remove("active");
                 link.removeAttribute("aria-current");
             }
         });
+
+        // If nothing matched, make Home active by default
+        if (!matched) {
+            const homeLink = document.querySelector('.navbar-nav .nav-link[href="index.html"]');
+            if (homeLink) {
+                homeLink.classList.add("active");
+                homeLink.setAttribute("aria-current", "page");
+            }
+        }
     });
 
 
