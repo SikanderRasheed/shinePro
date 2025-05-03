@@ -4,15 +4,18 @@ fetch('/header.html')
     .then(data => {
         document.getElementById("header").innerHTML = data;
 
-        // Page Active Code Start (moved inside fetch)
-        const currentPath = window.location.pathname.split("/").pop();
+        const currentPath = window.location.pathname;
 
         const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
         navLinks.forEach(link => {
             const linkPath = link.getAttribute("href");
 
-            if (linkPath === currentPath || (linkPath === "index.html" && (currentPath === "" || currentPath === "index.html"))) {
+            // Match with or without .html (for live servers that use pretty URLs)
+            if (
+                currentPath.includes(linkPath) ||
+                (linkPath === "index.html" && (currentPath === "/" || currentPath === "/index.html"))
+            ) {
                 link.classList.add("active");
                 link.setAttribute("aria-current", "page");
             } else {
