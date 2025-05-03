@@ -104,6 +104,11 @@
         line-height: 52px;
     }
 
+    .f-40 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
     .f-24 {
         font-size: 20px;
         line-height: 30px;
@@ -157,6 +162,11 @@
     .f-16 {
         font-size: 15px;
         line-height: 25px;
+    }
+
+    .f-15 {
+        font-size: 14px;
+        line-height: 23px;
     }
 
     .commercial_sec .cardsWrapper {
@@ -306,6 +316,10 @@
         padding: 0px 19px;
         font-size: 13px;
     }
+
+    .perfectionists_sec {
+        padding: 80px 0 90px;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -330,6 +344,10 @@
 
     section {
         padding: 80px 0;
+    }
+
+    .inner_industry_sec {
+        padding: 0px 0 110px;
     }
 
     .commitments_sec {
@@ -399,7 +417,8 @@
         padding: 90px 0;
     }
 
-    .contact_form_sec .txt {
+    .contact_form_sec .txt,
+    .contact_perfectionists .txt {
         text-align: left;
     }
 
@@ -423,6 +442,10 @@
     .meetus_sec .card {
         padding: 30px 15px;
         height: 100%;
+    }
+
+    .inner_banner {
+        padding: 50px 0;
     }
 }
 
@@ -559,6 +582,10 @@
         line-height: 25px;
     }
 
+    .f-24 {
+        font-size: 15px;
+    }
+
     .f-20 {
         font-size: 14px;
         line-height: 22px;
@@ -617,5 +644,14 @@
 
     .commitments_sec .card h3 {
         margin-bottom: 12px;
+    }
+
+    .perfectionists_sec {
+        padding: 50px 0 50px;
+    }
+
+    .perfectionists_sec .contact_details .txt h6 {
+        line-height: 28px;
+        margin-bottom: 0px;
     }
 }

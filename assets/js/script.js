@@ -1,3 +1,29 @@
+// Dynamic header Start
+fetch('/header.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById("header").innerHTML = data;
+
+        // Page Active Code Start (moved inside fetch)
+        const currentPath = window.location.pathname.split("/").pop();
+
+        const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+
+        navLinks.forEach(link => {
+            const linkPath = link.getAttribute("href");
+
+            if (linkPath === currentPath || (linkPath === "index.html" && (currentPath === "" || currentPath === "index.html"))) {
+                link.classList.add("active");
+                link.setAttribute("aria-current", "page");
+            } else {
+                link.classList.remove("active");
+                link.removeAttribute("aria-current");
+            }
+        });
+        // Page Active Code End
+    });
+
+
 // Counter Code Start
 function animateCounter(element, start, end, duration) {
     let startTime = null;

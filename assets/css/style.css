@@ -447,6 +447,16 @@ header .navbar-nav {
     justify-content: center;
 }
 
+.contact_banner {
+    background-image: url(../images/inner_banner3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .inner_banner .txt h1 {
     margin-bottom: 22px;
 }
@@ -1147,5 +1157,70 @@ header .navbar-nav {
 }
 
 /* ========================= Industry End ================================== */
+
+/* ========================= Contact Start ================================== */
+
+.perfectionists_sec {
+    padding: 110px 0 90px;
+}
+
+.perfectionists_sec .contact_details .hover_div {
+    margin-bottom: 36px;
+}
+
+.perfectionists_sec .contact_details .icon {
+    backdrop-filter: blur(10px);
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(204, 230, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(46, 100, 150);
+    border-image: initial;
+    border-radius: 6px;
+    transition: 0.4s ease-in-out;
+}
+
+.perfectionists_sec .contact_details .hover_div:hover .icon {
+    background: transparent;
+    transition: 0.4s ease-in-out;
+}
+
+.perfectionists_sec .contact_details .txt h6 {
+    line-height: 28px;
+    margin-bottom: 8px; 
+}
+
+.perfectionists_sec .numbers {
+    position: relative;
+}
+
+.perfectionists_sec .numbers::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: -2px;
+    top: 2px;
+    width: 1px;
+    height: 80%;
+    margin: 0px auto;
+    background: #000;
+}
+
+.perfectionists_sec .contact_details .hover_div:hover a {
+    color: rgb(46, 100, 150) !important;
+    transition: 0.4s ease-in-out;
+}
+
+.perfectionists_sec .contact_details .hover_div a:hover {
+    transform: scale(1.02);
+    color: #000000 !important;
+    transition: 0.4s ease-in-out;
+}
+
+/* ========================= Contact End ================================== */
 
 /* ========================================================================= */
