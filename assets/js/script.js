@@ -4,16 +4,24 @@ fetch('/header.html')
     .then(data => {
         document.getElementById("header").innerHTML = data;
 
-        const currentPath = window.location.pathname.replace(/\/$/, "").replace(".html", "");
+        // Wait until DOM is updated
+        const currentPath = window.location.pathname
+            .replace(/\/$/, "")            // remove trailing slash
+            .replace(/\.html$/, "")        // remove .html
+            .toLowerCase();                // lowercase for consistency
 
         const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
 
         navLinks.forEach(link => {
-            const linkPath = "/" + link.getAttribute("href").replace(".html", "");
+            const href = link.getAttribute("href") || "";
+            const linkPath = "/" + href
+                .replace(/^\//, "")         // remove leading slash
+                .replace(/\.html$/, "")     // remove .html
+                .toLowerCase();             // lowercase
 
+            // Home condition
             const isHome =
-                linkPath === "/index" &&
-                (currentPath === "" || currentPath === "/" || currentPath === "/index");
+                (linkPath === "/index" && (currentPath === "" || currentPath === "/" || currentPath === "/index"));
 
             if (currentPath === linkPath || isHome) {
                 link.classList.add("active");
@@ -23,8 +31,6 @@ fetch('/header.html')
                 link.removeAttribute("aria-current");
             }
         });
-
-        // Page Active Code End
     });
 
 
