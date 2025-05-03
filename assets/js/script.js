@@ -4,9 +4,9 @@ fetch('/header.html')
         document.getElementById("header").innerHTML = data;
 
         const currentPath = window.location.pathname
-            .replace(/\/$/, "")            // remove trailing slash
-            .replace(/\.html$/, "")        // remove .html
-            .toLowerCase();                // lowercase for consistency
+            .replace(/\/$/, "")
+            .replace(/\.html$/, "")
+            .toLowerCase();
 
         const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
         let matched = false;
@@ -14,9 +14,9 @@ fetch('/header.html')
         navLinks.forEach(link => {
             const href = link.getAttribute("href") || "";
             const linkPath = "/" + href
-                .replace(/^\//, "")         // remove leading slash
-                .replace(/\.html$/, "")     // remove .html
-                .toLowerCase();             // lowercase
+                .replace(/^\//, "")
+                .replace(/\.html$/, "")
+                .toLowerCase();
 
             if (currentPath === linkPath) {
                 link.classList.add("active");
