@@ -45,7 +45,7 @@
     }
 
     .commercial_sec .cardsWrapper {
-        height: 69vh;
+        height: 54vh;
     }
 
     .industry_sec {
@@ -329,9 +329,9 @@
         padding: 20px 28px;
         border-radius: 10px;
         position: absolute;
-        width: 100%;
-        top: 78px;
-        left: 0;
+        width: 95%;
+        top: 77px;
+        left: 6px;
     }
 
     header .navbar-nav {

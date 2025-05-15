@@ -328,6 +328,7 @@ a {
 header {
     padding: 6px 0;
     position: relative;
+    z-index: 99999;
 }
 
 header .navbar-brand {
@@ -398,7 +399,7 @@ header .navbar-nav {
 
 /* Banner Start */
 
-/* .banner_sec {
+.banner_sec {
     background-image: url(../images/banner_img.png);
     background-position: center;
     background-size: cover;
@@ -407,11 +408,12 @@ header .navbar-nav {
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+}
 
 .banner_sec .txt h1 {
     margin-bottom: 22px;
 }
+
 .banner_sec {
     position: relative;
     padding: 0;
@@ -435,6 +437,7 @@ header .navbar-nav {
     position: relative;
     z-index: 1;
 }
+
 /* Banner End */
 /* Inner Banner Start */
 
@@ -1214,7 +1217,7 @@ header .navbar-nav {
 
 .perfectionists_sec .contact_details .txt h6 {
     line-height: 28px;
-    margin-bottom: 8px; 
+    margin-bottom: 8px;
 }
 
 .perfectionists_sec .numbers {
