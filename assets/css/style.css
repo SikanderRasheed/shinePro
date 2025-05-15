@@ -401,7 +401,7 @@ header .navbar-nav {
 
 .banner_sec {
     background-image: url(../images/banner_img.png);
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 140px 0;
@@ -700,7 +700,7 @@ header .navbar-nav {
 
 .why_choose_sec .card .hover_content {
     position: absolute;
-    top: -112px;
+    top: -108px;
     left: 0;
     right: 0;
     margin: 0 auto;
